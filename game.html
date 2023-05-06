@@ -1,0 +1,156 @@
+<html>
+
+        <center><b><h1>ＴＩＣ－ＴＡＣＫ－ＴＯＥ</h1></b></center>
+        <br>
+        <br>
+  <body>
+  <center>
+    <b> <label id="label">ＷＩＮＮＥＲ　ＩＳ：－<output id="result"></output></label></b>
+  <table style="height: 50%" border="1">
+        <tr>
+          <td> <input type="text" id="box1"  style="height:90%"></td>
+          <td><input type="text" id="box2"  style="height:90%"></td>
+          <td><input type="text" id="box3"  style="height:90%"></td>
+        </tr>
+        <br>
+        <br>
+          <tr>
+            <td><input type="text" id="box4"  style="height:90%"></td>
+            <td><input type="text" id="box5"  style="height:90%"></td>
+            <td><input type="text" id="box6"  style="height:90%"></td>
+         </tr>
+          <tr>
+            <td><input type="text" id="box7"  style="height:90%"></td>
+            <td><input type="text" id="box8"  style="height:90%"></td>
+            <td><input type="text" id="box9"  style="height:90%"></td>
+          </tr>
+        </table>
+        <br> 
+        <br>
+        <button type="button" id="submit" style="font-size: 30px">𝐏𝐑𝐎𝐂𝐄𝐄𝐃</button>
+        </center>
+        
+        <script>
+          let box1;
+          let box2;
+          let box3;
+          let box4;
+          let box5;
+          let box6;
+          let box7;
+          let box8;
+          let box9;
+          let res="PLAY AGAIN";
+
+
+          document.getElementById("submit").onclick=function(){
+
+              box1=document.getElementById("box1").value;
+            
+              box2=document.getElementById("box2").value;
+
+              box3=document.getElementById("box3").value;
+
+              box4=document.getElementById("box4").value;
+
+              box5=document.getElementById("box5").value;
+
+              box6=document.getElementById("box6").value;
+
+              box7=document.getElementById("box7").value;
+
+              box8=document.getElementById("box8").value;
+
+              box9=document.getElementById("box9").value;
+
+             if( box1==box2 && box1==box3 || box1==box4  && box1==box7 ||box1==box5 && box1==box9)
+             {
+              
+                document.getElementById("result").value=box1;
+             }
+           else  if(box2==box5  && box2==box8 ||box2==box1 && box2==box3)
+             {
+              
+                document.getElementById("result").value=box2;
+             }
+            else if( box3==box1 && box3==box2 || box3==box6  && box3==box9 ||box3==box5 && box3==box7)
+             {
+              
+                document.getElementById("result").value=box3;
+             }
+            else if(box4==box5  && box4==box6 || box4==box1 && box4==box7)
+             {
+              
+                document.getElementById("result").value=box4;
+             }
+           else  if(box5==box4  && box5==box6 || box5==box2 && box5==box8)
+             {
+              
+                document.getElementById("result").value=box5;
+             }
+           else  if( box6==box3 && box6==box9 || box6==box4  && box6==box5)
+             {
+              
+                document.getElementById("result").value=box6;
+             }
+            else if( box7==box1 && box7==box4 || box7==box5  && box7==box3 ||box7==box8 && box7==box9)
+             {
+              
+                document.getElementById("result").value=box7;
+             }
+           else  if( box8==box2 && box8==box5 || box8==box7  && box8==box9)
+             {
+              
+                document.getElementById("result").value=box8;
+             }
+            else if( box9==box3 && box9==box6 || box9==box1  && box9==box5 ||box9==box7 && box9==box8)
+             {
+              
+                document.getElementById("result").value=box9;
+             }
+             else{
+              document.getElementById("result").value=res;
+             } 
+
+
+              //document.getElementById("result").value=box1;
+              
+          }
+        </script>
+
+        <style>
+          input {
+             font-size: 19px;
+             text-align: center; 
+             font-weight: 1000; 
+             background-color: rgb(21, 22, 22);
+             color:white;
+
+             }
+             output{
+              font-size: 25px;
+              color:white;
+              font-family: "Lucida Console", "Courier New", monospace;
+             }
+             body {
+              background-image: url("t1.jpg");
+              position: relative;
+              background-repeat: no-repeat;
+              background-size: cover;
+              
+            
+             }
+             h1{
+              color:white;
+             }
+             label{
+              color:white;
+
+             }
+          </style>
+
+
+                 
+                  
+        </body>
+</html>
